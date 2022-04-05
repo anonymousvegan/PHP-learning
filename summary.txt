@@ -1,0 +1,6 @@
+varijable  i vrednosti su osetljive na velika i mala slova, ključne reči nisu.
+#       //        /* */   komentari
+echo "$var" - radiće
+3 skoupa: local, global, static
+global: promenljiva koja je definisana van vunkcij, i SAMO se može koristiti van funkcije!
+local: u funkciji
