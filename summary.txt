@@ -8,3 +8,5 @@ static: isto u funkciji, samo se vrednost ne restartuje svaki put, već čuva pr
 sintaksa fun(){
     static $var = val;
 }
+tipovi podataka: string, int, float, boolan, array, objec, null, resource.
+4*2.5 = float(10) jer je  bar jedan operand float
