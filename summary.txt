@@ -13,3 +13,6 @@ tipovi podataka: string, int, float, boolan, array, objec, null, resource.
 konstante su globalne, sintaksa define("name", "value")
 <> je ispravan operator za nejednako. <=> vraća -1,0,1.
 ### dodati ostale operatore ##################!!!!!!!!!!
+Funkkcij nisu osetljive na slova, mogu imati reference  &, 
+povratni tip i tip argumenata, kao i default vrednost argumenata:
+function name : float(int arg1 = 10, int arg2, arg3)
