@@ -4,3 +4,7 @@ echo "$var" - radiće
 3 skoupa: local, global, static
 global: promenljiva koja je definisana van vunkcij, i SAMO se može koristiti van funkcije!
 local: u funkciji
+static: isto u funkciji, samo se vrednost ne restartuje svaki put, već čuva prethodnu.
+sintaksa fun(){
+    static $var = val;
+}
