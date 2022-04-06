@@ -11,3 +11,5 @@ sintaksa fun(){
 tipovi podataka: string, int, float, boolan, array, objec, null, resource.
 4*2.5 = float(10) jer je  bar jedan operand float
 konstante su globalne, sintaksa define("name", "value")
+<> je ispravan operator za nejednako. <=> vraća -1,0,1.
+### dodati ostale operatore ##################!!!!!!!!!!
