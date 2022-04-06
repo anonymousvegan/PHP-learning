@@ -16,3 +16,5 @@ konstante su globalne, sintaksa define("name", "value")
 Funkkcij nisu osetljive na slova, mogu imati reference  &, 
 povratni tip i tip argumenata, kao i default vrednost argumenata:
 function name : float(int arg1 = 10, int arg2, arg3)
+funkcije za  sortiranje nizova (običnih): sort  i rsort (unazad),
+za key=>val  ksort, krsort, asort, arsort (ključ - vrednost)
