@@ -19,4 +19,11 @@
         echo fgetc($f) . "<br>";
     }
     fclose($f);
+    $f = fopen("new_file.txt", "w");
+    $txt = "Hello, this is new file";
+    fwrite($f, $txt);
+    fclose($f);
+    $f = fopen("new_file.txt", "r");
+    echo fread($f, filesize("new_file.txt"));
+    fclose($f);
 ?>  
