@@ -1,0 +1,29 @@
+<?php
+    // uzimanje podataka o slici
+    $slika = $_FILES["slika"];
+    $imeslike=$_FILES["slika"]["name"];
+    $imesliketmp=$_FILES["slika"]["tmp_name"];
+    $velicinaslike=$_FILES["slika"]["size"];
+    $greska=$_FILES["slika"]["error"];
+    $vrstaslike=$_FILES["slika"]["type"];
+    $ekstenzija= explode(".", $imeslike);
+    $pravaekstenzija= strtolower(end($ekstenzija));
+    $dozvoljenja_ekstenzija="webp";
+    if($pravaekstenzija===$dozvoljenja_ekstenzija){//O KOD  ZA PROVERU EKSTEZIJE
+        echo   "slika je webp <br>";
+        if($velicinaslike<51200){ //KOD ZA PROVERU VELIČINE U BYTE
+            echo "slika je  manja od 50kb <br>";
+            $velicina_slike = getimagesize($imesliketmp);
+            $sirina = $velicina_slike[0];
+            $visina = $velicina_slike[1];
+            echo "slika ima rezoluciju od " . $sirina . "px x" . $visina . " px <br>"; 
+            if($sirina==800 && $visina==600){ // KOD ZA PROVERU REZOLUCIJE
+                echo "slika je odgovarajuće visine i širine <br>";
+                echo "Ubacujem";
+                $lokacija="ubaceneslike/vezba/".$imeslike;
+                move_uploaded_file($imesliketmp, $lokacija);
+                echo "<br> slika je ubačena";
+            }
+        }
+    }
+Footer
